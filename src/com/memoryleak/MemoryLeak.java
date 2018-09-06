@@ -22,10 +22,7 @@ class MemoryLeak {
     private List<Integer> leakingList = new ArrayList<>();
 
     private void startLeaking() {
-        while(true) {
-            leakingList.add(42);
-
-        }
+        leakingList.add(42);
     }
 
     public static void main(String[] args) {
